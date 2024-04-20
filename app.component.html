@@ -1,0 +1,5 @@
+<div *ngIf="sensorData | async as data">
+  <p>Date: {{ data.date }}</p>
+  <p>Temp: {{ data.temp }}</p>
+  <p>Temp: {{ data.humidity }}</p>
+</div>
