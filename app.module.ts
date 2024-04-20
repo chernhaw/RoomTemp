@@ -5,16 +5,19 @@ import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import {environment}   from '../environments/environment'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ShowtempComponent } from './showtemp/showtemp.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ShowtempComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    
   ],
   providers: [
     provideClientHydration()
