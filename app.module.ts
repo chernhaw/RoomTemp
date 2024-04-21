@@ -6,11 +6,15 @@ import {environment}   from '../environments/environment'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ShowtempComponent } from './showtemp/showtemp.component';
+import { ShowrecenttempComponent } from './showrecenttemp/showrecenttemp.component';
+import { RecenttempcardComponent } from './recenttempcard/recenttempcard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ShowtempComponent
+    ShowtempComponent,
+    ShowrecenttempComponent,
+    RecenttempcardComponent
   ],
   imports: [
     BrowserModule,
