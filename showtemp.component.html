@@ -1,11 +1,13 @@
-<div *ngIf="sensorData | async as data">
-    <p>Date: {{ data.date }}</p>
-    <p>Temp: {{ data.temp }}</p>
-    <p>Humidity: {{ data.humidity }}</p>
-  </div>
-  
+<h1 [style.backgroundColor]="backgroundColor">
+    <div class="centered-text">{{ currentData.date }}</div>
+    <div class="centered-text"> {{emoji}} {{ currentData.temp }} deg C {{ currentData.humidity }} %</div>
+    
+</h1>
+
+  <!--
   <div *ngIf="recentData | async as data">
     <div>{{data.json}}</div>
  
-  </div>
+  </div>\
+  -->
   
